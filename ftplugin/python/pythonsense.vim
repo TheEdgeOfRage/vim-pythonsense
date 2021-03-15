@@ -100,9 +100,9 @@ if ! get(g:, "is_pythonsense_suppress_keymaps", 0) && ! get(g:, "is_pythonsense_
         sunmap <buffer> ac
     endif
     if !hasmapto('<Plug>PythonsenseInnerClassTextObject')
-        vmap <buffer> ic <Plug>(PythonsenseInnerClassTextObject)
-        omap <buffer> ic <Plug>(PythonsenseInnerClassTextObject)
-        sunmap <buffer> ic
+        vmap <buffer> lc <Plug>(PythonsenseInnerClassTextObject)
+        omap <buffer> lc <Plug>(PythonsenseInnerClassTextObject)
+        sunmap <buffer> lc
     endif
 
     if !hasmapto('<Plug>PythonsenseOuterFunctionTextObject')
@@ -111,9 +111,9 @@ if ! get(g:, "is_pythonsense_suppress_keymaps", 0) && ! get(g:, "is_pythonsense_
         sunmap <buffer> af
     endif
     if !hasmapto('<Plug>PythonsenseInnerFunctionTextObject')
-        vmap <buffer> if <Plug>(PythonsenseInnerFunctionTextObject)
-        omap <buffer> if <Plug>(PythonsenseInnerFunctionTextObject)
-        sunmap <buffer> if
+        vmap <buffer> lf <Plug>(PythonsenseInnerFunctionTextObject)
+        omap <buffer> lf <Plug>(PythonsenseInnerFunctionTextObject)
+        sunmap <buffer> lf
     endif
 
     if !hasmapto('<Plug>PythonsenseOuterDocStringTextObject')
@@ -122,9 +122,9 @@ if ! get(g:, "is_pythonsense_suppress_keymaps", 0) && ! get(g:, "is_pythonsense_
         sunmap <buffer> ad
     endif
     if !hasmapto('<Plug>PythonsenseInnerDocStringTextObject')
-        omap <buffer> id <Plug>(PythonsenseInnerDocStringTextObject)
-        vmap <buffer> id <Plug>(PythonsenseInnerDocStringTextObject)
-        sunmap <buffer> id
+        omap <buffer> ld <Plug>(PythonsenseInnerDocStringTextObject)
+        vmap <buffer> ld <Plug>(PythonsenseInnerDocStringTextObject)
+        sunmap <buffer> ld
     endif
 endif
 
